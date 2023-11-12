@@ -1,0 +1,74 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=3 uid="uid://bbbusg1v6ptyj"]
+
+[ext_resource type="Texture2D" uid="uid://c1cjx36tfvar1" path="res://img/twinkle1.png" id="1_ibdiq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86fjs"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(124, 31, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ll8p8"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(242, 31, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mel02"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(360, 31, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wa6wr"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(124, 142, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yn3l"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(242, 142, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0df1u"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(360, 142, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b05uk"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(124, 253, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6r6sx"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(242, 253, 118, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gusp"]
+atlas = ExtResource("1_ibdiq")
+region = Rect2(360, 253, 118, 111)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86fjs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ll8p8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mel02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wa6wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yn3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0df1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b05uk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6r6sx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gusp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 13.0
+}]

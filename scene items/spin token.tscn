@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cln5t1hheia5b"]
+
+[ext_resource type="Texture2D" uid="uid://bmjuhri6fp7qf" path="res://img/hat token1.png" id="1_vqiuk"]
+[ext_resource type="Script" path="res://scripts/spin token.gd" id="2_c23so"]
+
+[node name="Token" type="Sprite2D"]
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("1_vqiuk")
+script = ExtResource("2_c23so")

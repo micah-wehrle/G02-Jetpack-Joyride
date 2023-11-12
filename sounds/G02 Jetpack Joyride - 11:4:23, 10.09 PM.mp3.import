@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk7i4nbrqi116"
+path="res://.godot/imported/G02 Jetpack Joyride - 11:4:23, 10.09 PM.mp3-542c1e0e3a1df9d402ae5806e8121e9d.mp3str"
+
+[deps]
+
+source_file="res://sounds/G02 Jetpack Joyride - 11:4:23, 10.09 PM.mp3"
+dest_files=["res://.godot/imported/G02 Jetpack Joyride - 11:4:23, 10.09 PM.mp3-542c1e0e3a1df9d402ae5806e8121e9d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

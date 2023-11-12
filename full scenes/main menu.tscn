@@ -1,0 +1,79 @@
+[gd_scene load_steps=6 format=3 uid="uid://chuh5ebn51th8"]
+
+[ext_resource type="Texture2D" uid="uid://crw473c45j78j" path="res://img/background2.jpg" id="1_ebxr5"]
+[ext_resource type="Script" path="res://full scenes/Main Menu.gd" id="2_06hua"]
+[ext_resource type="Texture2D" uid="uid://c66coivke7rfr" path="res://img/spiky circle.png" id="3_q060c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_svvq5"]
+font_size = 400
+font_color = Color(1, 1, 0.635294, 1)
+outline_size = 110
+outline_color = Color(0.694118, 0.682353, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0cua8"]
+font_size = 400
+font_color = Color(0, 1, 0.635294, 1)
+outline_size = 110
+outline_color = Color(0, 0.682353, 0, 1)
+
+[node name="Scene" type="Node2D"]
+metadata/_edit_vertical_guides_ = []
+
+[node name="Background" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1167, 650.651)
+scale = Vector2(2.00513, 1.20544)
+texture = ExtResource("1_ebxr5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_06hua")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+offset_left = 784.0
+offset_top = 99.0
+offset_right = 1605.0
+offset_bottom = 718.0
+texture = ExtResource("3_q060c")
+
+[node name="Label2" type="Label" parent="CanvasLayer/Control/TextureRect"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 147.0
+offset_right = 1960.0
+offset_bottom = 1245.0
+scale = Vector2(0.3, 0.3)
+text = "Jetpack!
+Joy? Ride."
+label_settings = SubResource("LabelSettings_svvq5")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 603.0
+offset_top = 877.0
+offset_right = 4396.0
+offset_bottom = 1975.0
+scale = Vector2(0.3, 0.3)
+text = "Tap/Space to Fly!"
+label_settings = SubResource("LabelSettings_0cua8")
+horizontal_alignment = 1
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1161.57, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(575.5, 324.5)
+scale = Vector2(0.994017, 0.603687)
+texture = ExtResource("1_ebxr5")

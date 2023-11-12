@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dufb6kj8n4plc"]
+
+[ext_resource type="Texture2D" uid="uid://bbp4ql323ykjy" path="res://img/smoke2.png" id="1_msli5"]
+
+[sub_resource type="Curve" id="Curve_3pghw"]
+_data = [Vector2(0, 1), 0.0, -0.0327855, 0, 0, Vector2(1, 0.322262), -2.27921, 0.0, 0, 0]
+point_count = 2
+
+[node name="CPUParticles2D" type="CPUParticles2D"]
+position = Vector2(-94, -226)
+scale = Vector2(1, 1.00253)
+amount = 20
+texture = ExtResource("1_msli5")
+spread = 20.0
+gravity = Vector2(100, 0)
+initial_velocity_min = 98.77
+initial_velocity_max = 172.84
+angular_velocity_min = -90.0
+angular_velocity_max = 90.0
+scale_amount_min = 0.2
+scale_amount_max = 0.4
+scale_amount_curve = SubResource("Curve_3pghw")
